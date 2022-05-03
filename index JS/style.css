@@ -1,9 +1,6 @@
 html {
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 62.5%;
 }
-span {
-    color: grey;
-    font-size: 40px;
+h1 {
+    font-size: 1.5rem;
 }
