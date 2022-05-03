@@ -4,28 +4,25 @@ console.group("cuadrado")
 function perimetroCuadrado (lado) {
     return lado * 4 + "cm";
 }
-perimetroCuadrado()
 
 function areaCuadrado (lado){
   return lado * lado + "cm";
 }
-areaCuadrado()
 
 console.groupEnd();
 
-// 
+//triangulo
 
 console.group("triangulos")
 
 function perimetroTriangulo (lado1, lado2, base) {
     return lado1 + lado2 + base + "cm";
 }
-perimetroTriangulo()
+
 
 function areaTriangulo (base, altura){
     return (base * altura) / 2 + "cm";
 }
-areaTriangulo()
 
 console.groupEnd();
 
@@ -36,29 +33,26 @@ console.group("circulos")
 function radioCirculo(radio){
     return radio + "cm";
 }
-radioCirculo()
 
 //diametro
 
-function diametroCirculo (radio) {
-    return radio * 2 + "cm";}
-diametroCirculo()
+function diametroCirculo(radio) {
+    return radio * 2;
+}
 
 //Pi
 const Pi = 3.1415;
 
 //circunferencia
 
-function circunferencia(diametro){
-    return diametro * Pi + "cm";
+function perimetroCirculo(radio) {
+    const dinametro = diametroCirculo (radio);
+    return dinametro * Pi;
 }
-circunferencia()
 //area
 
 function areaCirculo(radio){
     return (radio * radio) * Pi +"cm";
 }
-areaCirculo()
 
 console.groupEnd();
-
