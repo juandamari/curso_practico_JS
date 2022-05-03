@@ -13,4 +13,6 @@ console.log("el area del cuadrado es: " + areaCuadrado + "cm2");
 
 const baseTriangulo = 4;
 const ladoTriangulo = 6 + 6;
-console.log("los lados del triangulo miden " + (ladoTriangulo + baseTriangulo) + "cm")
+const alturaTriangulo = 5.5;
+console.log("el perimetro del triangulo miden " + (ladoTriangulo + baseTriangulo) + "cm");
+console.log("el area del triangulo es: " + baseTriangulo * alturaTriangulo + "cm2");
