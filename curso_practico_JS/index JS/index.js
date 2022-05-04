@@ -56,3 +56,9 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+// union html
+
+fuction calcularperimetrocuadrado() {
+    
+}
