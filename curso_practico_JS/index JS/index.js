@@ -19,9 +19,14 @@ function perimetroTriangulo (lado1, lado2, base) {
     return lado1 + lado2 + base + "cm";
 }
 
-
 function areaTriangulo (base, altura){
     return (base * altura) / 2 + "cm";
+}
+
+const raiz = Math.sqrt
+
+function alturatriangulo (lado, base){
+    return raiz ((lado * lado) - ((base * base) / 4))
 }
 
 console.groupEnd();
