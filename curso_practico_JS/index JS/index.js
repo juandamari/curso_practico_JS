@@ -33,7 +33,7 @@ console.groupEnd();
 
 // circulo
 
-console.group("circulos")
+console.group("circulos");
 
 //radio
 function radioCirculo(radio){
