@@ -59,6 +59,18 @@ console.groupEnd();
 
 // union html
 
-fuction calcularperimetrocuadrado() {
-    
+function calcularperimetrocuadrado() {
+    const input = document.getElementById("inputcuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularareacuadrado(){
+    const input = document.getElementById("inputcuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
 }
