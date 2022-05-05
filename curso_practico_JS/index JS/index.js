@@ -32,6 +32,7 @@ function alturatriangulo (lado, base){
 console.groupEnd();
 
 // circulo
+
 console.group("circulos")
 
 //radio
