@@ -15,8 +15,8 @@ console.groupEnd();
 
 console.group("triangulos")
 
-function perimetroTriangulo (lado1, lado2, base) {
-    return lado1 + lado2 + base + "cm";
+function perimetroTriangulo (inputladoA, inputladoB, inputbase) {
+    return inputladoA + inputladoB + inputbase + "cm";
 }
 
 function areaTriangulo (base, altura){
@@ -25,9 +25,9 @@ function areaTriangulo (base, altura){
 
 const raiz = Math.sqrt
 
-function alturatriangulo (lado, base){
-    return raiz ((lado * lado) - ((base * base) / 4))
-}
+//function alturatriangulo (inputladoA, inputladoB, inputbase){
+    //return raiz ((inputladoA * inputladoB) - ((inputbase * inputbase) / 4))
+//}
 
 //function alturatriangulo (ladoA, ladoB, base){
     //if (ladoA != ladoB) {
