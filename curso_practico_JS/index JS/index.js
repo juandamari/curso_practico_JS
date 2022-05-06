@@ -29,6 +29,13 @@ function alturatriangulo (lado, base){
     return raiz ((lado * lado) - ((base * base) / 4))
 }
 
+//function alturatriangulo (ladoA, ladoB, base){
+    //if (ladoA != ladoB) {
+        //console.error ("los lados a y b no son iguales");
+    //}
+//}
+
+
 console.groupEnd();
 
 // circulo
