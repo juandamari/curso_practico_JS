@@ -16,18 +16,17 @@ console.groupEnd();
 console.group("triangulos")
 
 function perimetroTriangulo (inputladoA, inputladoB, inputbase) {
-    return inputladoA + inputladoB + inputbase + "cm";
+    return inputladoA + inputladoB + inputbase;
 }
 
 function areaTriangulo (base, altura){
     return (base * altura) / 2 + "cm";
 }
-
 const raiz = Math.sqrt
 
-//function alturatriangulo (inputladoA, inputladoB, inputbase){
-    //return raiz ((inputladoA * inputladoB) - ((inputbase * inputbase) / 4))
-//}
+function alturatriangulo (inputladoA, inputladoB, inputbase){
+    return raiz ((inputladoA * inputladoB) - ((inputbase * inputbase) / 4))
+}
 
 //function alturatriangulo (ladoA, ladoB, base){
     //if (ladoA != ladoB) {
@@ -71,6 +70,7 @@ function areaCirculo(radio){
 console.groupEnd();
 
 // union html
+//cuadrado
 
 function calcularperimetrocuadrado() {
     const input = document.getElementById("inputcuadrado");
