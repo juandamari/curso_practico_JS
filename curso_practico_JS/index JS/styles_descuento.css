@@ -1,0 +1,12 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Bebas Neue', cursive;
+}
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: blue;
+}
+.cabecera {
+    font-size: 3.5rem;
+}
