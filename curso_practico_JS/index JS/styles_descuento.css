@@ -47,5 +47,13 @@ h2 {
     color: black;
     background-color: white;
     margin-top: 5px;
-
+}
+#resultp {
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    border-color: black;
+    width: 260px;
+    height: auto;
+    padding: 3px;
 }
