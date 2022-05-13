@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Bebas Neue', cursive;
+    box-sizing: 0;
+
+
+}
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: blue;
+}
+#cabecera {
+    font-size: 4rem;
+    text-align: center;
+}
+h2 {
+    font-size: 3.5rem;
+    width: 600px;
+    height: 100%;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    border-color: black;
+    border-style: double;
+    border-width: 15px;
+
+}
+.primer-input {
+    font-size: 2rem;
+    border-color: red;
+    border-radius: 5px;
+    color: red;
+}
+.segundo-input {
+    font-size: 2rem;
+    border-color: #00FF00;
+    border-radius: 5px;
+    color: #00FF00;
+    display: block;
+}
+.boton {
+    font-size: 2rem;
+    border-color: #0101DF;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    margin-top: 5px;
+}
+#resultp {
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    border-color: black;
+    width: 260px;
+    height: auto;
+    padding: 3px;
+}
