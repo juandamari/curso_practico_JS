@@ -71,10 +71,7 @@ console.groupEnd();
 
 // union html
 //cuadrado
-<<<<<<< HEAD
 
-=======
->>>>>>> 3a2b6dae628cddf2812a5bf8c3faaa9273be8983
 function calcularperimetrocuadrado() {
     const input = document.getElementById("inputcuadrado");
     const value = input.value;
@@ -90,8 +87,6 @@ function calcularareacuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
-<<<<<<< HEAD
-=======
 
 //triangulo
 
@@ -102,4 +97,3 @@ function calcularperimetrotriangulo(){
     const perimetro = perimetroTriangulo(value);
     alert(perimetro);
 }
->>>>>>> 3a2b6dae628cddf2812a5bf8c3faaa9273be8983
