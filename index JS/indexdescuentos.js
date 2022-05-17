@@ -28,4 +28,3 @@ function clickbotonpreciodescuento () {
     const resultp = document.getElementById("resultp");
     resultp.innerText = "el precio total con descuento es: $" + preciocondescuento;
 }
-console.log(document.querySelectorAll("p"))
