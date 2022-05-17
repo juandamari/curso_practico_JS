@@ -27,11 +27,36 @@ function clickbotonpreciodescuento () {
 
     const resultp = document.getElementById("resultp");
     resultp.innerText = "el precio total con descuento es: $" + preciocondescuento;
+
+    const inputcupon = Document.getElementById("inputcupon");
+    const cuponvalue = inputcupon.value;
+
+    let descuento;
+
+    switch(cuponvalue) {
+        case cupons [0]:
+            descuento = 15;
+        break;
+        case cupons [1]:
+            descuento = 25;
+        break;
+        case cupons [2]:
+            descuento = 30;
+        break;
+    }
+    const preciocondescuentos = calcularprecioconcupon (pricevalue, cuponvalue);
+    const result = document.getElementById("result");
+    resultp.innerText = "el precio total con descuento es: $" + precioconcupon;
+    
 }
 const cupons = [
     "cupon_juan",
     "cupon_mania",
     "miercoles15"
 ];
-const inputcupon = Document.getElementById("inputcupon");
-const cuponvalue = inputcupon.value;
+function calcularprecioconcupon ( precio, cupons) {
+    const porcentajepreciocupon = 100 - cupons;
+    const precioconcupon = (precio * porcentajepreciocupon) / 100; 
+
+    return precioconcupon;
+}
