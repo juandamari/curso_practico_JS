@@ -2,6 +2,7 @@
 
 
 ...
+## realizando cambios de rama
 
 ## taller #1: figuras gemometricas
 
