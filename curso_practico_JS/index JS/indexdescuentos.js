@@ -11,12 +11,35 @@
     //preciocondescuento,
 //});
 
-function calcularpreciocondescuento (precio, descuento) {
-    const porcentajepreciocondescuento = 100 - descuento;
-    const preciocondescuento = (precio * porcentajepreciocondescuento) / 100;
 
-    return preciocondescuento;
+/* 
+function calcularprecioconcupon ( precio, cupons) {
+        const porcentajepreciocupon = 100 - cupons;
+        const precioconcupon = (precio * porcentajepreciocupon) / 100; 
+    
+        return precioconcupon;
 }
+
+let descuento;
+
+    switch(cuponvalue) {
+        case cupons [0]:
+            descuento = 15;
+        break;
+        case cupons [1]:
+            descuento = 25;
+        break;
+        case cupons [2]:
+            descuento = 30;
+        break;
+    }
+    
+const cupons = [
+    "cupon_juan",
+    "cupon_mania",
+    "miercoles15"
+];
+
 function clickbotonpreciodescuento () {
     const inputprice = document.getElementById("inputprice");
     const pricevalue = inputprice.value;
@@ -30,33 +53,55 @@ function clickbotonpreciodescuento () {
 
     const inputcupon = Document.getElementById("inputcupon");
     const cuponvalue = inputcupon.value;
+    const precioconcupon = calcularprecioconcupon (pricevalue, cuponvalue);
 
-    let descuento;
-
-    switch(cuponvalue) {
-        case cupons [0]:
-            descuento = 15;
-        break;
-        case cupons [1]:
-            descuento = 25;
-        break;
-        case cupons [2]:
-            descuento = 30;
-        break;
-    }
-    const preciocondescuentos = calcularprecioconcupon (pricevalue, cuponvalue);
     const result = document.getElementById("result");
-    resultp.innerText = "el precio total con descuento es: $" + precioconcupon;
-    
+    result.innerText = "el precio total con descuento es: $" + precioconcupon;
 }
-const cupons = [
-    "cupon_juan",
-    "cupon_mania",
-    "miercoles15"
-];
-function calcularprecioconcupon ( precio, cupons) {
-    const porcentajepreciocupon = 100 - cupons;
-    const precioconcupon = (precio * porcentajepreciocupon) / 100; 
+    */ 
 
-    return precioconcupon;
-}
+
+
+
+
+
+function calcularPrecioConDescuento(precio, descuento){
+    const porcentajeDelPrecioConDescuento = 100 - descuento;
+    const precioConDescuento = (precio * porcentajeDelPrecioConDescuento)/ 100;
+  
+    return precioConDescuento;
+  }
+
+  function clickbotonpreciodescuento() {
+      const inputprice = document.getElementById("inputprice");
+      const priceValue = inputprice.value;
+      
+      const inputcupon = document.getElementById("inputcupon");
+      const couponValue = inputcupon.value;
+  
+      const resultCoupon = document.getElementById("resultp")
+    
+    
+      let descuento;
+      let precioConDescuento; 
+    
+      switch(true) {
+        case couponValue === "juan_01":
+          descuento = 15;
+          precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
+          resultCoupon.innerText =`Cupón de 15%, el precio con descuento es de: $${precioConDescuento} dolares, `
+        break;
+        case couponValue === "juan_02":
+          descuento = 30;
+          precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
+          resultCoupon.innerText =`Cupón es de 30%, el precio con descuento es de: $${precioConDescuento} dolares`
+        break;
+        case couponValue === "juan_03":
+          descuento = 25;
+          precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
+          resultCoupon.innerText =`Cupón es de 25%, el precio con descuento es de: $${precioConDescuento} dolares`
+        break;
+        default:
+          resultCoupon.innerText = "el cupón ingresado no es valido"
+      }
+  }
