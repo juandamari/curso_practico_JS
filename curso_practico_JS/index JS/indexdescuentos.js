@@ -60,11 +60,6 @@ function clickbotonpreciodescuento () {
 }
     */ 
 
-
-
-
-
-
 function calcularPrecioConDescuento(precio, descuento){
     const porcentajeDelPrecioConDescuento = 100 - descuento;
     const precioConDescuento = (precio * porcentajeDelPrecioConDescuento)/ 100;
@@ -92,22 +87,21 @@ function clickbotonpreciodescuento() {
         case couponValue === "juan_01":
           descuento = 15;
           precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
-          resultCoupon.innerText =`Cupón de 15%, el precio con descuento es de: $${precioConDescuento} dolares, `
+          resultCoupon.innerText =`Cupón de 15%, el precio con descuento es de: $${precioConDescuento} dolares, descuento no acumulables `
         break;
         case couponValue === "juan_02":
           descuento = 30;
           precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
-          resultCoupon.innerText =`Cupón es de 30%, el precio con descuento es de: $${precioConDescuento} dolares`
+          resultCoupon.innerText =`Cupón es de 30%, el precio con descuento es de: $${precioConDescuento} dolares, descuento no acumulables`
         break;
         case couponValue === "juan_03":
           descuento = 25;
           precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
-          resultCoupon.innerText =`Cupón es de 25%, el precio con descuento es de: $${precioConDescuento} dolares`
+          resultCoupon.innerText =`Cupón es de 25%, el precio con descuento es de: $${precioConDescuento} dolares, descuento no acumulables`
         break;
         default:
             precioConDescuento = calcularPrecioConDescuento(priceValue,discountvalue);
-            resultCoupon.innerText =`Cupón es de 25%, el precio con descuento es de: $${precioConDescuento} dolares`
-            
+            resultCoupon.innerText = `El precio con descuento es de: $${precioConDescuento} dolares, descuento no acumulables con cupones`
       }
 }
 /* function clickbotonpreciodescuento () {
