@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Bebas Neue', cursive;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: grid;
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    font-size: 2.5rem;
+
+    grid-template-columns: 
+    repeat(3);
+    grid-template-rows: repeat(2);
+}
+
+.fase1 {
+    
+}

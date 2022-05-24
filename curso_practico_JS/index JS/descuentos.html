@@ -4,35 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>descuentos</title>
-    <link rel="stylesheet" href="./styles_descuento.css"/>
+    <link rel="stylesheet" href="./stylesgrid.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
       <header>
+        <div class="fase1">
           <h1>Porcentajes y descuentos</h1>
-      <p id="cabecera">Este es el segundo taller del Curso Practico de JavaScript</p>
+          <p id="cabecera">Este es el segundo taller del Curso Practico de JavaScript</p>
+        </div>
       </header>
       <section>
+          <div class="fase2">
           <h2>calcula el precio a pagar de tus productos con descuento</h2>
+          </div>
           <form>
-              <label for="inputprice" class="primer-input">escribe el precio de tu producto</label>
+              <div class="fase3">
+              <label for="inputprice" class="fase4">escribe el precio de tu producto</label>
               <input id="inputprice" type="number" class="primer1"/>
 
-              <label for="inputdiscount" class="segundo-input">escribe el descuento de tu producto</label>
+              <label for="inputdiscount" class="fase5">escribe el descuento de tu producto</label>
               <input id="inputdiscount" type="number" class="segundo2"/>
 
-              <label for="inputcupon" class="tercer-input">escribe el codigo del cupon</label>
+              <label for="inputcupon" class="fase6">escribe el codigo del cupon</label>
               <input id="inputcupon" type="text" class="tercero"/>
 
-              <button type="button" onclick="clickbotonpreciodescuento()" class="boton">
+              <button type="button" onclick="clickbotonpreciodescuento()" class="fase7">
                   calcular el precio con descuento
               </button>
               <p id="resultp"></p>
               <p id="result"></p>
+              </div>
           </form>
       </section>
+    </div>
       <script src="./indexdescuentos.js"></script>
   </body>
 </html>
