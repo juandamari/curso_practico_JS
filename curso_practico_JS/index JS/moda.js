@@ -19,7 +19,6 @@ const lista1 = [
     2,
     3,
     1
-
 ];
 
 const lista1count = {};
@@ -32,6 +31,12 @@ lista1.map(
         } else {
             lista1count[elemento] = 1;
         }
-        
     }
 );
+const lista1array = Object.entries(lista1count).sort(
+    function (valoracumulado, nuevovalor) {
+        return valoracumulado[1] - nuevovalor[1];
+    }
+);
+
+const moda = lista1array[lista1array.length - 1];
