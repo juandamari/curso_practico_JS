@@ -40,3 +40,10 @@ const lista1array = Object.entries(lista1count).sort(
 );
 
 const moda = lista1array[lista1array.length - 1];
+
+const array = [
+    {carros: "toyota", price: 2500},
+    {carros: "ford", price: 4500},
+    {carros: "honda", price: 1250}];
+
+array.forEach(item => console.log(item), console.log(item.carros));
