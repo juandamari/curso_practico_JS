@@ -1,19 +1,24 @@
 const notes = [
     {
         course: "Educación Física",
-        note: 10,
+        note: 7,
         credit: 2,
     },
     {
         course: "Programación",
-        note: 8,
+        note: 9,
         credit: 5,
     },
     {
         course: "Finanzas personales",
-        note: 7,
+        note: 10,
         credit: 5,
     },
+    {
+        course: "matemáticas",
+        note: 8,
+        credit: 4,
+    }
 ];
 
 const notesWithCredit = notes.map(function (noteObject) {
@@ -37,3 +42,5 @@ const sumOfCredits = credits.reduce(
 );
 
 const promedioPonderadoNotasConCreditos = sumOfNotesWithCredit / sumOfCredits;
+
+document.getElementById("ponderado").innerHTML = promedioPonderadoNotasConCreditos;
