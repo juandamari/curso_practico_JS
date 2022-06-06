@@ -39,9 +39,6 @@ const lista1array = Object.entries(lista1count).sort(
     }
 );
 
-<<<<<<< HEAD
-const moda = lista1array[lista1array.length - 1];
-=======
 const moda = lista1array[lista1array.length - 1];
 
 const array = [
@@ -50,4 +47,3 @@ const array = [
     {carros: "honda", price: 1250}];
 
 array.forEach(item => console.log(item), console.log(item.carros));
->>>>>>> e407d68643aad962de13bbfe19facb81015ea7c9
