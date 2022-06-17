@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="español">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="description" content="esta pagina es para fotos de gaticos"/>
+     <meta name="robots" content="index,follow"/>
+     <title>analisis</title>
+     <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+            <article class="container">
+            
+                <div class="title">
+                    <h1>Calcula la capacidad de endeudamiento, segun tus ingresos y gastos</h1>
+                    <p>Esta capacidad de endeudamiento se calcula de acuerdo a las recomendaciones de los bancos que no excedan el 40% de tus ingresos</p>
+                    <lu>
+                        <li>BAJO = 20%</li>
+                        <li>MEDIO = 35% - Recomendado</li>
+                        <li>ALTO = 40%</li>
+                    </lu>
+                </div>
+                </div>
+    
+                <div class="item1">
+                    <label for="input1">Digita tus ingresos mensuales</label>
+                    <input id="input1" type="number" class="espacio1"/>
+                </div>
+                
+                <div class="item2">
+                    <label for="input2">Digita todos tus gastos que tienes del mes</label><br>
+                    <input id="input2" type="number" class="espacio2"/>
+                </div>
+                
+                <div class="item3">
+                    <label for="opciones">Escoge el nivel de capacidad de endeudamiento</label><br>
+                    <select id="opciones">
+                        <option value="0.20">bajo</option>
+                        <option value="0.35">medio</option>
+                        <option value="0.40">alto</option>
+                    </select><br>
+                    <button type="button" onclick="clickboton()" id="boton"> calcular </button>
+                    <p id="resultp"></p>
+                    </div>
+            </article>
+    
+    
+            <article class="container2">
+    
+                <div class="ahorrtitle">
+                    <h1>Calcula la cuanto es lo que podrias ahorrar, segun tus ingresos</h1>
+                    <p>Esta capacidad de ahorro es de acuerdo a lo que recomiendan los econmistas que lo minimo seria del 10% de tus ingresos</p>
+                    <lu>
+                        <li>BAJO = 5%</li>
+                        <li>MEDIO = 10%</li>
+                        <li>ALTO = 20% - Recomendado</li>
+                    </lu>
+                </div>
+    
+                <div class="item4">
+                    <label for="input3">Digita tus ingresos mensuales</label>
+                    <input id="input3" type="number" class="espacio3"/>
+                </div>
+    
+                <div class="item6">
+                    <label for="opciones2">Escoge el nivel de capacidad de endeudamiento</label><br>
+                    <select id="opciones2">
+                        <option value="5">bajo</option>
+                        <option value="10">medio</option>
+                        <option value="20">alto</option>
+                    </select><br>
+                    </div>
+                    <div class="boton2">
+                        <button type="button" onclick="clickboton2()" id="boton2"> calcular</button> 
+                    <p id="resultpp"></p>
+                    </div>
+                    
+            </article>        
+        <script src="./analisisP.js"></script>
+    </body>
+</html>
