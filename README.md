@@ -24,3 +24,10 @@
 - segundo paso: implementar la formula en javascript
 - tercer paso: crear funciones
 - cuarto paso: integrar JS con Html
+
+## Taller #4: analisis de salarios, ahorro y deuda
+
+- primer paso: analizar los datos que se requieren
+- segundo paso: definir las formulas
+- tercer paso: implementar la formula en JavaScript
+- cuarto paso: integrar JS con Html
