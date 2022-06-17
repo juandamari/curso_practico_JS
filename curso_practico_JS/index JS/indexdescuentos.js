@@ -57,7 +57,7 @@ function clickbotonpreciodescuento() {
 //});
 
 
-/* 
+
 function calcularprecioconcupon ( precio, cupons) {
         const porcentajepreciocupon = 100 - cupons;
         const precioconcupon = (precio * porcentajepreciocupon) / 100; 
@@ -103,4 +103,4 @@ function clickbotonpreciodescuento () {
     const result = document.getElementById("result");
     result.innerText = "el precio total con descuento es: $" + precioconcupon;
 }
-    */
+   

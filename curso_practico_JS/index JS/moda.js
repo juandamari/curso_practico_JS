@@ -27,7 +27,7 @@ lista1.map(
     function(elemento){
         if (lista1count[elemento]) {
             lista1count[elemento] += 1; //esto sumara cada vez que pase por el elemento de los arrys
-            
+
         } else {
             lista1count[elemento] = 1;
         }
