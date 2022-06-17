@@ -1,7 +1,6 @@
-function capacidadDeuda (ingreso, egreso, porcentaje) {
+function capacidadDeuda (ingreso, egreso,porcentaje) {
     const capacidad = (ingreso - egreso) * porcentaje;
     return capacidad;
-    console.log(capacidad);
 };
 
 function clickboton() {
@@ -10,30 +9,31 @@ function clickboton() {
 
     const inputdiscount = document.getElementById ("input2");
     const enteregreso = inputdiscount.value;
-    
-    const inputcupon = document.getElementById("input3");
-    const entercapacidad = inputcupon.value;
+
+    const inputporcentaje = document.getElementById ("opciones");
+    const enterporcentaje = inputporcentaje.value
 
     const resultCoupon = document.getElementById("resultp")
-
-
-let porcentaje
-let capacidad;
-
-switch(true) {
-    case value === "1":
-      porcentaje = 0.20;
-      capacidad = capacidadDeuda(enteringreso, enteregreso, entercapacidad);
-      resultCoupon.innerText =`Su capacidad de ahorro es de maximo: ${capacidad} pesos, segun su nivel de ahorro conservador`
-    break;
-    case value === "2":
-        porcentaje = 0.30;
-        capacidad = capacidadDeuda(enteringreso, enteregreso, entercapacidad);
-        resultCoupon.innerText =`Su capacidad de ahorro es de maximo: ${capacidad} pesos, segun su nivel de ahorro moderado`
-    break;
-    default:
-        capacidad = capacidadDeuda(enteringreso, enteregreso, entercapacidad);
-        resultCoupon.innerText = `Su capacidad de ahorro es de maximo de ahorro de se puede calcular`;
-        break;
+    
+    let capacidad = capacidadDeuda (enteringreso,enteregreso,enterporcentaje)
+    resultCoupon.innerText =`capacidad de endeudamiento es de: $${capacidad} pesos`
 };
+
+function capacidadAhorro (ingreso, porcentajeahorro) {
+    const ahorro = (ingreso / 100) * porcentajeahorro;
+    return ahorro;
 }
+function clickboton2() {
+    const inputingreso = document.getElementById("input3");
+    const ahorroIngreso = inputingreso.value;
+
+    const inputPorcent = document.getElementById("opciones2");
+    const porcentajeahorro = inputPorcent.value;
+
+    const resultCouponn = document.getElementById("resultpp")
+
+    let capacidadAhoro = capacidadAhorro(ahorroIngreso,porcentajeahorro)
+    resultCouponn.innerText =`capacidad de endeudamiento es de: $${capacidadAhoro} pesos`
+console.log(clickboton2);
+}
+
